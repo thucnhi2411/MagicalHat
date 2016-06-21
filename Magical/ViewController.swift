@@ -12,24 +12,26 @@ class ViewController: UIViewController {
   
 	var answer = "ELEPHANT" // this is our answer
 	var lettersArray = [String]()
-	var score: Int = 0
-	
+	var score: Int = 0	
     @IBOutlet weak var scoreBoard: UILabel!
-   
-
     @IBOutlet weak var wordBoard: UILabel!
-    
     @IBOutlet weak var announcementBoard: UILabel!
 	
 	// this will be called automatically when the program starts
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
 		let charactersInAnswer = Array(answer.characters)
+		
+		// set up the initial labels
+		wordBoard.text = ""
+		announcementBoard.text = "Start by picking a letter"
+		
 		// convert each char to string for comparison
+		// now letterArray is ["E", "L", "E", "P", "H", "A", "N", "T"]
 		for ch in charactersInAnswer {
 			lettersArray.append(String(ch))
 		}
-		// now letterArray is ["E", "L", "E", "P", "H", "A", "N", "T"]
 		
 		// now display the same number of pandas as the number of chars
 		// in the answer
