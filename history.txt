@@ -1,0 +1,96 @@
+commit 2e09f06a96012c96941bc1d2dea0545bd62e79be
+Author: thucnhi2411 <let@lafayette.edu>
+Date:   Wed Aug 10 16:08:23 2016 +0700
+
+    Add icon image
+
+commit bf4e753c7a3f4d3f168230d703bb1b7373ac1c6a
+Author: thucnhi2411 <let@lafayette.edu>
+Date:   Wed Jun 22 11:08:46 2016 +0700
+
+    Add some more cool answers, except for 'CHRIS' which is not cool at all !!!
+
+commit db77d1399e3370b8e97d311ec14ae9eae02b2c87
+Author: thucnhi2411 <let@lafayette.edu>
+Date:   Wed Jun 22 10:05:15 2016 +0700
+
+    Fix score bug
+
+commit a199765c69848bff81545073220db1e00fdbb2bc
+Author: thucnhi2411 <let@lafayette.edu>
+Date:   Wed Jun 22 08:04:52 2016 +0700
+
+    About to throw the laptop if I cannot commit and push this time...
+
+commit 93e05da12e421533b871a17814f0d54c952014ef
+Merge: 65e1e2b 6cdeb3f
+Author: thucnhi2411 <let@lafayette.edu>
+Date:   Tue Jun 21 23:06:37 2016 +0700
+
+    Merge branch 'master' of https://github.com/thucnhi2411/MagicalHat
+
+commit 65e1e2b865350477a64449eab1af5260c2efa3da
+Author: thucnhi2411 <let@lafayette.edu>
+Date:   Tue Jun 21 20:44:30 2016 +0700
+
+    Change some lines
+
+commit 123bedf850097050db4aaf933d945c74c9aa27fa
+Author: thucnhi2411 <let@lafayette.edu>
+Date:   Tue Jun 21 20:41:22 2016 +0700
+
+    Change...
+
+commit 0c4d5f22923cbf03643ec261db3ddc8564be9052
+Author: thucnhi2411 <let@lafayette.edu>
+Date:   Tue Jun 21 20:40:38 2016 +0700
+
+    Change something I don't even notice nah~
+
+commit 164f5011c4fbbf3ce06f878f1882a7d8c77ee400
+Author: thucnhi2411 <let@lafayette.edu>
+Date:   Tue Jun 21 20:38:17 2016 +0700
+
+    Change something in storyboard
+
+commit 5019084813dac2b2ba633c4a27e8a8e197a78a77
+Author: thucnhi2411 <let@lafayette.edu>
+Date:   Tue Jun 21 15:59:31 2016 +0700
+
+    Add Round 2
+
+commit 41737ddcac788b3b2d0b5a360b8e89b67335bb64
+Author: thucnhi2411 <let@lafayette.edu>
+Date:   Tue Jun 21 11:57:03 2016 +0700
+
+    Didn't change anything but nah~
+
+commit 6cdeb3fee757f2d68544b95b89b664b878acee93
+Author: HuyLafa <anhhuy0706@gmail.com>
+Date:   Tue Jun 21 00:23:29 2016 -0400
+
+    Fix bug for Nhi Nhi.
+
+commit 677d608ea49405ac355f2f4acab9e4ea0c482c1e
+Author: thucnhi2411 <let@lafayette.edu>
+Date:   Tue Jun 21 11:10:16 2016 +0700
+
+    Add the function for the alphabetButton
+
+commit 681d5cf390bff9f7cdf638204a0765766b02cc1e
+Author: HuyLafa <anhhuy0706@gmail.com>
+Date:   Mon Jun 20 20:50:29 2016 -0400
+
+    Set up view and layout.
+
+commit 1c5c813b45cdfd21bddb86ba199b4bbc1d66c806
+Author: HuyLafa <anhhuy0706@gmail.com>
+Date:   Mon Jun 20 20:39:35 2016 -0400
+
+    Set up array code.
+
+commit 13dfe3c96d2fe5554c7f0df768744abd840fb18b
+Author: HuyLafa <anhhuy0706@gmail.com>
+Date:   Mon Jun 20 10:29:04 2016 -0400
+
+    First working version

@@ -68,7 +68,11 @@ class ViewController: UIViewController {
                     announcementBoard.text = "There is 1 " + "\(ch)"
 				}
                 else {
+<<<<<<< HEAD
 					announcementBoard.text = "There are " + "\(occurence) \(ch)s"
+=======
+					announcementBoard.text = "There are " + "\(occurence)" + "\(ch)"
+>>>>>>> 6cdeb3f... Fix bug for Nhi Nhi.
 				}
 			}
 			// TODO. compare each char in the answer array with the button's title
@@ -76,15 +80,23 @@ class ViewController: UIViewController {
 		}
 		
 		if occurence == 0 {
+<<<<<<< HEAD
 			announcementBoard.text = "There is no \(sender.currentTitle!)"
+=======
+			announcementBoard.text = "There is no \(sender.currentTitle)"
+>>>>>>> 6cdeb3f... Fix bug for Nhi Nhi.
 		}
 		
 		wordBoard.text = ""
 		for i in 1...displayArray.count {
 			wordBoard.text = wordBoard.text! + displayArray[i - 1]
+<<<<<<< HEAD
             scoreBoard.text = "Score: \(score)"
 		}
         }
+=======
+		}
+>>>>>>> 6cdeb3f... Fix bug for Nhi Nhi.
     }
 	
     @IBAction func quitButton(sender: UIButton) {
