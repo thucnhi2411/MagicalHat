@@ -9,12 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-  
+    
 	var answer = "ELEPHANT" // this is our answer
 	var lettersArray = [String]()
+	var displayArray = [String]()
 	var score: Int = 0
-    var index: Int = -1
-    var occurence: Int = 0
     @IBOutlet weak var scoreBoard: UILabel!
     @IBOutlet weak var wordBoard: UILabel!
     @IBOutlet weak var announcementBoard: UILabel!
@@ -38,33 +37,56 @@ class ViewController: UIViewController {
 		// now display the same number of pandas as the number of chars
 		// in the answer
 		for i in 1...lettersArray.count {
-			wordBoard.text = wordBoard.text! + "🐼"
+			displayArray.append("🐼") // everything is initially 🐼
+			wordBoard.text = wordBoard.text! + displayArray[i - 1]
 		}
-	}
+        
+       	}
 	
     
     @IBAction func alphabetButton(sender: UIButton) {
+		
+		var index: Int = -1
+		var occurence: Int = 0
 		// this is how you iterate through an array
+        
+        
+        
         for ch in lettersArray {
+            
+            if displayArray == lettersArray {
+            announcementBoard.text = "Yayyyyy! Click 'NEXT' for next round!"
+                
+                
+            }
+            else {
             index = index + 1
             if sender.currentTitle == ch {
-            occurence = occurence + 1
-            lettersArray[index] = ch
-           
-            score = score + 1
-            wordBoard.text = "\(lettersArray)"
+				occurence = occurence + 1
+				displayArray[index] = ch
+				score = score + 1
                 if occurence == 1 {
-                    announcementBoard.text = "There is 1 " + "\(ch)" }
-                else {announcementBoard.text = "There are " + "\(occurence)" + "\(ch)" } }
+                    announcementBoard.text = "There is 1 " + "\(ch)"
+				}
                 else {
-                    announcementBoard.text = "There is no " + "\(ch)"
-                }
-            
+					announcementBoard.text = "There are " + "\(occurence) \(ch)s"
+				}
+			}
 			// TODO. compare each char in the answer array with the button's title
 			// if there's a match, update the score and the display
 		}
+		
+		if occurence == 0 {
+			announcementBoard.text = "There is no \(sender.currentTitle!)"
+		}
+		
+		wordBoard.text = ""
+		for i in 1...displayArray.count {
+			wordBoard.text = wordBoard.text! + displayArray[i - 1]
+            scoreBoard.text = "Score: \(score)"
+		}
+        }
     }
-	
 	
     @IBAction func quitButton(sender: UIButton) {
         wordBoard.text = answer
@@ -72,5 +94,24 @@ class ViewController: UIViewController {
         
     }
 	
+    @IBAction func nextButton(sender: UIButton) {
+        wordBoard.text = ""
+       
+        lettersArray = [String]()
+        displayArray = [String]()
+         answer = "CHRISTOPHER"
+    let charactersInAnswer = Array(answer.characters)
+            
+    announcementBoard.text = "Start by picking a letter"
+        
+    for ch in charactersInAnswer {
+    lettersArray.append(String(ch))
+            }
+    for i in 1...lettersArray.count {
+        displayArray.append("🐼") // everything is initially 🐼
+        wordBoard.text = wordBoard.text! + displayArray[i - 1]
+            }
+
+    }
 	
 }

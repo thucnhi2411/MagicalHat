@@ -342,16 +342,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suD-8N-lQi">
-                                <rect key="frame" x="395" y="559" width="88" height="36"/>
-                                <color key="backgroundColor" red="0.21176470588235294" green="0.15294117647058825" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="SPIN">
-                                    <color key="titleColor" red="0.75686274509803919" green="0.5725490196078431" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngD-vZ-olJ">
-                                <rect key="frame" x="488" y="559" width="87" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngD-vZ-olJ">
+                                <rect key="frame" x="395" y="559" width="87" height="36"/>
                                 <color key="backgroundColor" red="0.27578606677152978" green="0.21275451782427024" blue="0.35606971153846156" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="QUIT">
@@ -367,20 +359,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="word board" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bog-pL-FxZ">
-                                <rect key="frame" x="28" y="28" width="544" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="word board" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bog-pL-FxZ">
+                                <rect key="frame" x="28" y="28" width="544" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="message board" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdN-m0-j0i">
-                                <rect key="frame" x="28" y="86" width="544" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="message board" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdN-m0-j0i">
+                                <rect key="frame" x="28" y="86" width="544" height="69"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o5G-mp-Lcw">
-                                <rect key="frame" x="28" y="115" width="544" height="257"/>
+                                <rect key="frame" x="28" y="163" width="544" height="209"/>
                                 <connections>
                                     <segue destination="KQR-m7-kZn" kind="embed" id="n74-Ha-Hbi"/>
                                 </connections>
@@ -412,6 +404,17 @@
                                 </state>
                                 <connections>
                                     <action selector="alphabetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CTB-Jj-HHD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suD-8N-lQi">
+                                <rect key="frame" x="488" y="559" width="88" height="36"/>
+                                <color key="backgroundColor" red="0.21176470588235294" green="0.15294117647058825" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" red="0.75686274509803919" green="0.5725490196078431" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qm0-GI-uLg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -765,7 +768,7 @@
                         <viewControllerLayoutGuide type="bottom" id="t2f-qD-P9o"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9F3-GJ-ujC">
-                        <rect key="frame" x="0.0" y="0.0" width="544" height="257"/>
+                        <rect key="frame" x="0.0" y="0.0" width="544" height="209"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
