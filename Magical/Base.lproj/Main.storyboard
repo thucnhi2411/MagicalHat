@@ -673,13 +673,15 @@
                                 <exclude reference="wbx-iU-2Xu"/>
                                 <exclude reference="Y38-ZI-ehk"/>
                                 <exclude reference="a4b-DF-lJe"/>
-                                <exclude reference="plr-1U-CEE"/>
                                 <exclude reference="6vA-20-8Ff"/>
                                 <exclude reference="MXt-8X-4UC"/>
                                 <exclude reference="fd7-Ql-tvf"/>
                                 <exclude reference="ipK-bg-fxE"/>
                                 <exclude reference="8PQ-VQ-K7s"/>
                                 <exclude reference="Rb4-3X-8bP"/>
+                                <exclude reference="FsT-Wv-sNx"/>
+                                <exclude reference="dyJ-cS-EcN"/>
+                                <exclude reference="wa9-8q-9fs"/>
                                 <exclude reference="qQN-D9-e6U"/>
                                 <exclude reference="2ET-YB-5gZ"/>
                                 <exclude reference="ud2-ao-oyr"/>
@@ -690,6 +692,7 @@
                                 <exclude reference="4Vb-Kf-lOc"/>
                                 <exclude reference="cen-xv-09d"/>
                                 <exclude reference="nZe-gf-0Bk"/>
+                                <exclude reference="plr-1U-CEE"/>
                                 <exclude reference="7vK-ki-Rqa"/>
                                 <exclude reference="iQ1-5H-slD"/>
                                 <exclude reference="BG1-cq-eRD"/>
@@ -704,9 +707,6 @@
                                 <exclude reference="x2n-fX-2Tc"/>
                                 <exclude reference="SEt-Dd-ysP"/>
                                 <exclude reference="pQU-4x-JJ1"/>
-                                <exclude reference="FsT-Wv-sNx"/>
-                                <exclude reference="dyJ-cS-EcN"/>
-                                <exclude reference="wa9-8q-9fs"/>
                                 <exclude reference="3yJ-la-KuR"/>
                                 <exclude reference="NmY-l1-DCY"/>
                                 <exclude reference="F43-cw-mXh"/>
@@ -739,13 +739,13 @@
                                 <exclude reference="TkU-lD-IuH"/>
                                 <exclude reference="rig-jj-QIO"/>
                                 <exclude reference="weV-tE-4nK"/>
-                                <exclude reference="ArC-w3-bvF"/>
-                                <exclude reference="pX8-kN-TmF"/>
-                                <exclude reference="qXm-xC-Gvg"/>
                                 <exclude reference="Beg-m5-Qem"/>
                                 <exclude reference="bjB-Bq-xh6"/>
                                 <exclude reference="iv4-dc-RWY"/>
                                 <exclude reference="ivV-Mt-Unp"/>
+                                <exclude reference="ArC-w3-bvF"/>
+                                <exclude reference="pX8-kN-TmF"/>
+                                <exclude reference="qXm-xC-Gvg"/>
                             </mask>
                         </variation>
                     </view>
