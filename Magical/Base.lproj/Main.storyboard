@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -670,13 +670,11 @@
                                 <exclude reference="wbx-iU-2Xu"/>
                                 <exclude reference="Y38-ZI-ehk"/>
                                 <exclude reference="a4b-DF-lJe"/>
+                                <exclude reference="plr-1U-CEE"/>
                                 <exclude reference="6vA-20-8Ff"/>
                                 <exclude reference="MXt-8X-4UC"/>
                                 <exclude reference="fd7-Ql-tvf"/>
                                 <exclude reference="ipK-bg-fxE"/>
-                                <exclude reference="FsT-Wv-sNx"/>
-                                <exclude reference="dyJ-cS-EcN"/>
-                                <exclude reference="wa9-8q-9fs"/>
                                 <exclude reference="8PQ-VQ-K7s"/>
                                 <exclude reference="Rb4-3X-8bP"/>
                                 <exclude reference="qQN-D9-e6U"/>
@@ -689,7 +687,6 @@
                                 <exclude reference="4Vb-Kf-lOc"/>
                                 <exclude reference="cen-xv-09d"/>
                                 <exclude reference="nZe-gf-0Bk"/>
-                                <exclude reference="plr-1U-CEE"/>
                                 <exclude reference="7vK-ki-Rqa"/>
                                 <exclude reference="iQ1-5H-slD"/>
                                 <exclude reference="BG1-cq-eRD"/>
@@ -704,6 +701,9 @@
                                 <exclude reference="x2n-fX-2Tc"/>
                                 <exclude reference="SEt-Dd-ysP"/>
                                 <exclude reference="pQU-4x-JJ1"/>
+                                <exclude reference="FsT-Wv-sNx"/>
+                                <exclude reference="dyJ-cS-EcN"/>
+                                <exclude reference="wa9-8q-9fs"/>
                                 <exclude reference="3yJ-la-KuR"/>
                                 <exclude reference="NmY-l1-DCY"/>
                                 <exclude reference="F43-cw-mXh"/>
@@ -716,23 +716,23 @@
                                 <exclude reference="T1j-Ou-6TR"/>
                                 <exclude reference="Gut-7v-682"/>
                                 <exclude reference="aVA-yZ-JEZ"/>
-                                <exclude reference="UWk-5K-dm5"/>
-                                <exclude reference="yao-AB-E9X"/>
                                 <exclude reference="KUv-kh-nf0"/>
                                 <exclude reference="WYA-hW-ZLW"/>
                                 <exclude reference="ezg-4i-8K0"/>
                                 <exclude reference="hub-oc-tWh"/>
                                 <exclude reference="k3F-Vi-za0"/>
+                                <exclude reference="UWk-5K-dm5"/>
+                                <exclude reference="yao-AB-E9X"/>
                                 <exclude reference="7Ya-e1-vdU"/>
                                 <exclude reference="whE-cc-2RA"/>
                                 <exclude reference="MLE-xC-A7D"/>
                                 <exclude reference="Mo6-RH-DYI"/>
                                 <exclude reference="Ttk-Ec-8an"/>
+                                <exclude reference="BVE-tW-jnE"/>
+                                <exclude reference="xzJ-r8-RUy"/>
                                 <exclude reference="LZo-IS-KUc"/>
                                 <exclude reference="bFO-k9-pYf"/>
                                 <exclude reference="lPd-ME-i0g"/>
-                                <exclude reference="BVE-tW-jnE"/>
-                                <exclude reference="xzJ-r8-RUy"/>
                                 <exclude reference="TkU-lD-IuH"/>
                                 <exclude reference="rig-jj-QIO"/>
                                 <exclude reference="weV-tE-4nK"/>
@@ -760,6 +760,10 @@
         <scene sceneID="rK6-zz-n2x">
             <objects>
                 <viewController id="KQR-m7-kZn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uD6-Nr-pVw"/>
+                        <viewControllerLayoutGuide type="bottom" id="t2f-qD-P9o"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9F3-GJ-ujC">
                         <rect key="frame" x="0.0" y="0.0" width="544" height="257"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

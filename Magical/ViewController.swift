@@ -12,7 +12,9 @@ class ViewController: UIViewController {
   
 	var answer = "ELEPHANT" // this is our answer
 	var lettersArray = [String]()
-	var score: Int = 0	
+	var score: Int = 0
+    var index: Int = -1
+    var occurence: Int = 0
     @IBOutlet weak var scoreBoard: UILabel!
     @IBOutlet weak var wordBoard: UILabel!
     @IBOutlet weak var announcementBoard: UILabel!
@@ -43,7 +45,21 @@ class ViewController: UIViewController {
     
     @IBAction func alphabetButton(sender: UIButton) {
 		// this is how you iterate through an array
-		for ch in lettersArray {
+        for ch in lettersArray {
+            index = index + 1
+            if sender.currentTitle == ch {
+            occurence = occurence + 1
+            lettersArray[index] = ch
+           
+            score = score + 1
+            wordBoard.text = "\(lettersArray)"
+                if occurence == 1 {
+                    announcementBoard.text = "There is 1 " + "\(ch)" }
+                else {announcementBoard.text = "There are " + "\(occurence)" + "\(ch)" } }
+                else {
+                    announcementBoard.text = "There is no " + "\(ch)"
+                }
+            
 			// TODO. compare each char in the answer array with the button's title
 			// if there's a match, update the score and the display
 		}
