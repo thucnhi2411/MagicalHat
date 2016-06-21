@@ -14,7 +14,6 @@
 		04292B611D164F2200BE7685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04292B5F1D164F2200BE7685 /* LaunchScreen.storyboard */; };
 		04292B6C1D164F2200BE7685 /* MagicalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04292B6B1D164F2200BE7685 /* MagicalTests.swift */; };
 		04292B771D164F2200BE7685 /* MagicalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04292B761D164F2200BE7685 /* MagicalUITests.swift */; };
-		04292B871D1653F100BE7685 /* magic-hat.png in Resources */ = {isa = PBXBuildFile; fileRef = 04292B861D1653F100BE7685 /* magic-hat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		04292B721D164F2200BE7685 /* MagicalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04292B761D164F2200BE7685 /* MagicalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicalUITests.swift; sourceTree = "<group>"; };
 		04292B781D164F2200BE7685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04292B861D1653F100BE7685 /* magic-hat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "magic-hat.png"; path = "../../../../../magic-hat.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +77,6 @@
 		04292B4A1D164F2100BE7685 = {
 			isa = PBXGroup;
 			children = (
-				04292B861D1653F100BE7685 /* magic-hat.png */,
 				04292B551D164F2200BE7685 /* Magical */,
 				04292B6A1D164F2200BE7685 /* MagicalTests */,
 				04292B751D164F2200BE7685 /* MagicalUITests */,
@@ -235,7 +232,6 @@
 				04292B611D164F2200BE7685 /* LaunchScreen.storyboard in Resources */,
 				04292B5E1D164F2200BE7685 /* Assets.xcassets in Resources */,
 				04292B5C1D164F2200BE7685 /* Main.storyboard in Resources */,
-				04292B871D1653F100BE7685 /* magic-hat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

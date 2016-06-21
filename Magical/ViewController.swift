@@ -9,51 +9,50 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    var alphabet: String = ""
-   
-    var array = ["🐼","🐼","🐼","🐼","🐼","🐼","🐼","🐼"]
-     var score: Int = 0
+  
+	var answer = "ELEPHANT" // this is our answer
+	var lettersArray = [String]()
+	var score: Int = 0
+	
     @IBOutlet weak var scoreBoard: UILabel!
    
 
     @IBOutlet weak var wordBoard: UILabel!
     
     @IBOutlet weak var announcementBoard: UILabel!
+	
+	// this will be called automatically when the program starts
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		let charactersInAnswer = Array(answer.characters)
+		// convert each char to string for comparison
+		for ch in charactersInAnswer {
+			lettersArray.append(String(ch))
+		}
+		// now letterArray is ["E", "L", "E", "P", "H", "A", "N", "T"]
+		
+		// now display the same number of pandas as the number of chars
+		// in the answer
+		for i in 1...lettersArray.count {
+			wordBoard.text = wordBoard.text! + "🐼"
+		}
+	}
+	
     
     @IBAction func alphabetButton(sender: UIButton) {
-        wordBoard.text = "\(array)"
-         alphabet = sender.currentTitle!
-        switch alphabet {
-        case "E":
-            array[0] = "E"
-            array[2] = "E"
-        case "L": array[1] = "L"
-        case "P": array[3] = "P"
-        case "H": array[4] = "H"
-        case "A": array[5] = "A"
-        case "N": array[6] = "N"
-        case "T": array[7] = "T"
-        default:  break       }
-        wordBoard.text = "\(array)"
-        
-        if alphabet == "E" {
-            announcementBoard.text = "There are 2 letters E"
-            score = score + 2
-            scoreBoard.text = "Score " + "\(score)"}
-        else { if (alphabet == "L" || alphabet == "P" || alphabet == "H" || alphabet == "A" || alphabet == "N" || alphabet ==  "T") {
-            announcementBoard.text = "There is one letter " + "\(alphabet)"
-            score = score + 1
-            scoreBoard.text = "Score " + "\(score)"
-            }
-        else { announcementBoard.text = "There is no " +  "\(alphabet)"
-            scoreBoard.text = "Score " + "\(score)"}
-        
+		// this is how you iterate through an array
+		for ch in lettersArray {
+			// TODO. compare each char in the answer array with the button's title
+			// if there's a match, update the score and the display
+		}
     }
-}
+	
+	
     @IBAction func quitButton(sender: UIButton) {
-        wordBoard.text = "ELEPHANT"
+        wordBoard.text = answer
         announcementBoard.text = "Your score is " + "\(score)" + " ." + "Good luck next time!!!"
         
     }
+	
+	
 }
