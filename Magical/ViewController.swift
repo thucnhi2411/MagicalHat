@@ -40,7 +40,6 @@ class ViewController: UIViewController {
 			displayArray.append("🐼") // everything is initially 🐼
 			wordBoard.text = wordBoard.text! + displayArray[i - 1]
 		}
-        
        	}
 	
     
