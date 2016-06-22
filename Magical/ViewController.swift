@@ -75,9 +75,14 @@ class ViewController: UIViewController {
 >>>>>>> 6cdeb3f... Fix bug for Nhi Nhi.
 				}
 			}
+<<<<<<< HEAD
 			// TODO. compare each char in the answer array with the button's title
 			// if there's a match, update the score and the display
 		}
+=======
+            }
+            
+>>>>>>> a199765... About to throw the laptop if I cannot commit and push this time...
 		
 		if occurence == 0 {
 <<<<<<< HEAD
