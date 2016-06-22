@@ -47,7 +47,11 @@ class ViewController: UIViewController {
 		
 		var index: Int = -1
 		var occurence: Int = 0
+<<<<<<< HEAD
 		// this is how you iterate through an array
+=======
+    
+>>>>>>> db77d13... Fix score bug
         
         
         
@@ -60,10 +64,15 @@ class ViewController: UIViewController {
             }
             else {
             index = index + 1
+            
+            
             if sender.currentTitle == ch {
 				occurence = occurence + 1
-				displayArray[index] = ch
-				score = score + 1
+                if displayArray[index] == "🐼" {
+                    score = score + 1}
+                
+                displayArray[index] = ch
+                
                 if occurence == 1 {
                     announcementBoard.text = "There is 1 " + "\(ch)"
 				}
@@ -99,6 +108,7 @@ class ViewController: UIViewController {
             scoreBoard.text = "Score: \(score)"
 		}
         }
+<<<<<<< HEAD
 =======
 		}
 >>>>>>> 6cdeb3f... Fix bug for Nhi Nhi.
@@ -117,6 +127,19 @@ class ViewController: UIViewController {
         displayArray = [String]()
          answer = "CHRISTOPHER"
     let charactersInAnswer = Array(answer.characters)
+=======
+
+
+    @IBAction func nextButton(sender: UIButton) {
+       
+            wordBoard.text = ""
+            lettersArray = [String]()
+            displayArray = [String]()
+            answer = "CHRIST"
+            let charactersInAnswer = Array(answer.characters)
+            
+            announcementBoard.text = "Start by picking a letter"
+>>>>>>> db77d13... Fix score bug
             
     announcementBoard.text = "Start by picking a letter"
         
