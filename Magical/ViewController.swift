@@ -14,13 +14,37 @@ class ViewController: UIViewController {
 	var lettersArray = [String]()
 	var displayArray = [String]()
 	var score: Int = 0
+    let answerArray = ["CHRISTOPHER", "CHICKEN", "YELLOW"]
+    var count: Int  = -1
+
     @IBOutlet weak var scoreBoard: UILabel!
     @IBOutlet weak var wordBoard: UILabel!
     @IBOutlet weak var announcementBoard: UILabel!
 	
 	// this will be called automatically when the program starts
+    
+    func initView() {
+        
+        wordBoard.text = ""
+        announcementBoard.text = "Start by picking a letter"
+        
+        
+        let charactersInAnswer = Array(answer.characters)
+        
+        announcementBoard.text = "Start by picking a letter"
+        
+        for ch in charactersInAnswer {
+            lettersArray.append(String(ch))
+        }
+        for i in 1...lettersArray.count {
+            displayArray.append("🐼") // everything is initially 🐼
+            wordBoard.text = wordBoard.text! + displayArray[i - 1]
+        }
+    }
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
+<<<<<<< HEAD
 		
 		let charactersInAnswer = Array(answer.characters)
 		
@@ -42,6 +66,17 @@ class ViewController: UIViewController {
 		}
        	}
 	
+=======
+		initView()
+		       	}
+   
+    
+        
+    @IBAction func quitPress(sender: UIButton) {
+        wordBoard.text = answer
+        announcementBoard.text = "Your score is \(score). Good Luck next time!"
+    }
+>>>>>>> bf4e753... Add some more cool answers, except for 'CHRIS' which is not cool at all !!!
     
     @IBAction func alphabetButton(sender: UIButton) {
 		
@@ -131,10 +166,10 @@ class ViewController: UIViewController {
 
 
     @IBAction func nextButton(sender: UIButton) {
-       
             wordBoard.text = ""
             lettersArray = [String]()
             displayArray = [String]()
+<<<<<<< HEAD
             answer = "CHRIST"
             let charactersInAnswer = Array(answer.characters)
             
@@ -151,6 +186,11 @@ class ViewController: UIViewController {
         wordBoard.text = wordBoard.text! + displayArray[i - 1]
             }
 
+=======
+            count = count + 1
+            answer = "\(answerArray[count])"
+            initView()
     }
-	
-}
+    
+>>>>>>> bf4e753... Add some more cool answers, except for 'CHRIS' which is not cool at all !!!
+    }
